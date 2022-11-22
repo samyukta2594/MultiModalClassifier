@@ -1,8 +1,21 @@
 # Bonus 1
 Steps followed 
 1. Use the Cifar10 dataset to train a simple classifying model. Record the accuracy/epochs and save the model for future reference 
-2. Convert the saved model to TF lite to run effeciently on mbile and edge devices. Compare inferance performance
+2. Convert the saved model to TF lite to run effeciently on mobile and edge devices. Compare inferance performance
 3. Use option 5 to deploy the model using TF serving 
+
+# Step 1 - 
+Clone the git repo, create avirtual enviroment and run setup.py to install all depandancies.
+Train a simple CNN model using a cifar10 dataset and save it to .output/ cifar_models. Changes are mentioned inline with comments [myTFDistributedTrainer.py]
+
+
+# Step 2 
+Convert the trained model to TF lite. Used a coab notebook for the same using refernce from https://colab.research.google.com/github/tensorflow/models/blob/master/research/object_detection/colab_tutorials/convert_odt_model_to_TFLite.ipynb#scrollTo=FT3-38PJsSOt
+The trained cifar10 model is uploaded to google drive, mounted and used.
+
+# Step 3 - 
+Deploy to TF Serving - https://colab.research.google.com/drive/1shduBPG9up4rLb-e57xQpatrvORMs6GP#scrollTo=97aHQCRxDnE4
+The api endpoint  http://localhost:8501/v1/models/saved_model:predict is used for predictions.
 
 
 # MultiModalClassifier
