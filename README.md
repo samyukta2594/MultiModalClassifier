@@ -1,3 +1,10 @@
+# Bonus 1
+Steps followed 
+1. Use the Cifar10 dataset to train a simple classifying model. Record the accuracy/epochs and save the model for future reference 
+2. Convert the saved model to TF lite to run effeciently on mbile and edge devices. Compare inferance performance
+3. Use option 5 to deploy the model using TF serving 
+
+
 # MultiModalClassifier
 This is a project repo for multi-modal deep learning classifier with popular models from Tensorflow and Pytorch. The goal of these baseline models is to provide a template to build on and can be a starting point for any new ideas, applications. If you want to learn basics of ML and DL, please refer this repo: https://github.com/lkk688/DeepDataMiningLearning.
 
